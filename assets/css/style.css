@@ -128,12 +128,11 @@ body {
   font-weight: 600;
   color: #000000;
   box-shadow: 0 10px 10px -5px #000000;
-  background: linear-gradient(to top, #ff7700 0%, #ffee00 100%);
+  background-color: #ffcc00;
 }
 
-.fa-button-icon {
+.fa-icon-right {
   margin-left: 0.8rem;
-  font-size: 1.1em;
 }
 
 .about {
@@ -158,4 +157,56 @@ body {
   font-size: 1em;
   letter-spacing: 0.1em;
   line-height: 1.5em;
+}
+
+.skills {
+  margin-top: 0rem;
+  padding: 4rem;
+}
+
+.skills-title {
+  display: block;
+  font-family: "Exo";
+  color: #ffcc00;
+  font-size: 1.8em;
+  text-transform: capitalize;
+}
+
+.skills-content {
+  margin: 2rem 0;
+  display: block;
+  font-family: "Exo";
+  color: #ffcc00;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+
+.skills-items {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 4rem;
+  font-family: "Exo";
+}
+
+.skills-item-icon {
+  font-size: 4rem;
+  text-align: center;
+  color: #ffcc00;
+}
+
+.skills-item-title {
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1rem;
+  text-align: center;
+  color: #ffcc00;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.skills-item-content {
+  font-size: 1rem;
+  text-align: center;
+  color: #ffcc0044;
 }
