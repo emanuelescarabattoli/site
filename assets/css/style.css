@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:300,400,500&display=swap');
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #090909;
+}
+
+.hero-bits {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 4rem;
+  color: #ffcc0022;
+  font-size: 1rem;
+  font-family: monospace;
+  width: 4rem;
+  word-wrap: break-word;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url("../img/pattern.png");
+  background-position: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  width: 1000px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-column-gap: 3rem;
+}
+
+.hero-title-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-title {
+  display: block;
+  font-family: "Exo";
+  color: #ffcc00;
+  font-size: 3.8em;
+  text-transform: capitalize;
+}
+
+.hero-subtitle {
+  display: block;
+  font-family: "Exo";
+  color: #888888;
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+.hero-window {
+  background-color: #050505;
+  height: 200px;
+  border-radius: 7px;
+  box-shadow: 0 10px 20px -5px #000000;
+  overflow: hidden;
+}
+
+.hero-window-title {
+  height: 30px;
+  background-color: #ffffff07;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hero-window-title div {
+  background-color: #ffcc00;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.hero-window-content {
+  padding: 1rem;
+}
+
+.hero-window-content p{
+  margin: 0;
+  display: block;
+  font-family: monospace;
+  color: #ffcc00;
+  font-size: 1.1em;
+  text-transform: lowercase;
+}
+
+.hero-socials {
+  margin: 1rem 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hero-socials li {
+  margin: 0 1rem 0 0;
+  padding: 0;
+  display: inline-block;
+  color: #ffcc00;
+  font-size: 2em;
+}
+
+.hero-buttons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-family: "Exo";
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+  box-shadow: 0 10px 10px -5px #000000;
+  background: linear-gradient(to top, #ff7700 0%, #ffee00 100%);
+}
+
+.fa-button-icon {
+  margin-left: 0.8rem;
+  font-size: 1.1em;
+}
+
+.about {
+  margin-top: 0rem;
+  padding: 4rem;
+  background-color: #ffcc00;
+}
+
+.about-title {
+  display: block;
+  font-family: "Exo";
+  color: #000000;
+  font-size: 1.8em;
+  text-transform: capitalize;
+}
+
+.about-content {
+  margin: 2rem 0;
+  display: block;
+  font-family: "Exo";
+  color: #000000;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
