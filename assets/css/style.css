@@ -71,6 +71,10 @@ body {
   color: #ffcc00;
   font-size: 3.8em;
   text-transform: capitalize;
+  margin: 0px;
+  padding: 0px;
+  line-height: 1em;
+  font-weight: normal;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -86,6 +90,10 @@ body {
   color: #888888;
   font-size: 1.2em;
   text-transform: capitalize;
+  margin: 0px;
+  padding: 0px;
+  line-height: 1em;
+  font-weight: normal;
 }
 
 @media only screen and (max-width: 1024px) {
