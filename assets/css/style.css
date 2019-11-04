@@ -4,7 +4,7 @@ html,
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #090909;
+  background-color: #111111;
 }
 
 .hero-bits {
@@ -12,7 +12,7 @@ body {
   top: 0;
   left: 0;
   padding: 0 4rem;
-  color: #ffcc0022;
+  color: #ffcc0055;
   font-size: 1rem;
   font-family: monospace;
   width: 4rem;
@@ -31,7 +31,7 @@ body {
 }
 
 .hero-content {
-  width: 1000px;
+  width: 1024px;
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-column-gap: 3rem;
@@ -60,7 +60,7 @@ body {
 }
 
 .hero-window {
-  background-color: #050505;
+  background-color: #202020;
   height: 200px;
   border-radius: 7px;
   box-shadow: 0 10px 20px -5px #000000;
@@ -69,7 +69,7 @@ body {
 
 .hero-window-title {
   height: 30px;
-  background-color: #ffffff07;
+  background-color: #ffffff22;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -135,6 +135,10 @@ body {
   margin-left: 0.8rem;
 }
 
+.fa-icon-left {
+  margin-right: 0.8rem;
+}
+
 .about {
   margin-top: 0rem;
   padding: 4rem;
@@ -159,9 +163,19 @@ body {
   line-height: 1.5em;
 }
 
+.about-wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
 .skills {
   margin-top: 0rem;
   padding: 4rem;
+}
+
+.skills-wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
 }
 
 .skills-title {
@@ -171,6 +185,7 @@ body {
   font-size: 1.8em;
   text-transform: capitalize;
 }
+
 
 .skills-content {
   margin: 2rem 0;
@@ -201,12 +216,77 @@ body {
   font-size: 1rem;
   text-align: center;
   color: #ffcc00;
-  font-size: 1.6rem;
-  font-weight: 500;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .skills-item-content {
   font-size: 1rem;
   text-align: center;
-  color: #ffcc0044;
+  color: #cccccc99;
+}
+
+.footer-bits {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 4rem;
+  color: #ffcc0055;
+  font-size: 1rem;
+  font-family: monospace;
+  width: 4rem;
+  word-wrap: break-word;
+}
+
+.footer {
+  background-image: url("../img/pattern.png");
+  background-position: 10px 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-content {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 140px 140px 1fr;
+  grid-column-gap: 3rem;
+}
+
+.footer-title {
+  display: block;
+  font-family: "Exo";
+  color: #ffcc00;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+.footer-menu {
+  margin: 1rem 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-menu li {
+  margin: 0.5rem 0;
+  padding: 0;
+  color: #ffcc00;
+  font-size: 1.2em;
+  font-family: "Exo";
+}
+
+.footer-credits {
+  display: block;
+  font-family: "Exo";
+  color: #cccccc99;
+  text-align: right;
+  padding: 2rem;
+  font-size: 1em;
+}
+
+.footer-credits i {
+  margin: 0 0.6rem;
+  color: #ffcc00;
 }
