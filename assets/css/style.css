@@ -19,6 +19,13 @@ body {
   word-wrap: break-word;
 }
 
+@media only screen and (max-width: 1024px) {
+  .hero-bits {
+    padding: 0 2rem;
+    color: #ffcc001c;
+  }
+}
+
 .hero {
   height: 100vh;
   background-image: url("../img/pattern.png");
@@ -33,14 +40,29 @@ body {
 .hero-content {
   width: 1024px;
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 280px 1fr;
   grid-column-gap: 3rem;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero-content {
+    width: 100%;
+    display: block;
+  }
 }
 
 .hero-title-wrapper {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero-title-wrapper {
+    margin-top: 1rem;
+    display: block;
+  }
 }
 
 .hero-title {
@@ -51,6 +73,13 @@ body {
   text-transform: capitalize;
 }
 
+@media only screen and (max-width: 1024px) {
+  .hero-title {
+    text-align: center;
+    font-size: 1.35em;
+  }
+}
+
 .hero-subtitle {
   display: block;
   font-family: "Exo";
@@ -59,12 +88,28 @@ body {
   text-transform: capitalize;
 }
 
+@media only screen and (max-width: 1024px) {
+  .hero-subtitle {
+    text-align: center;
+    font-size: 1em;
+  }
+}
+
 .hero-window {
   background-color: #202020;
   height: 200px;
   border-radius: 7px;
   box-shadow: 0 10px 20px -5px #000000;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero-window {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 280px;
+    height: 150px;
+  }
 }
 
 .hero-window-title {
@@ -110,6 +155,23 @@ body {
   font-size: 2em;
 }
 
+@media only screen and (max-width: 1024px) {
+  .hero-socials {
+    display: block;
+    margin: 1rem auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-socials li {
+    margin: 0 1rem 0 0;
+    padding: 0;
+    display: inline-block;
+    color: #ffcc00;
+    font-size: 2em;
+  }
+}
+
 .hero-buttons {
   position: absolute;
   bottom: 0;
@@ -120,7 +182,7 @@ body {
 
 .button {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 0.75rem 1.75rem;
   border-radius: 2rem;
   text-decoration: none;
   font-family: "Exo";
@@ -129,6 +191,8 @@ body {
   color: #000000;
   box-shadow: 0 10px 10px -5px #000000;
   background-color: #ffcc00;
+  font-size: 0.9em;
+  line-height: 0.9em;
 }
 
 .fa-icon-right {
@@ -145,12 +209,25 @@ body {
   background-color: #ffcc00;
 }
 
+@media only screen and (max-width: 1024px) {
+  .about {
+    padding: 2rem;
+  }
+}
+
+
 .about-title {
   display: block;
   font-family: "Exo";
   color: #000000;
   font-size: 1.8em;
   text-transform: capitalize;
+}
+
+@media only screen and (max-width: 1024px) {
+  .about-title {
+    font-size: 1.4em;
+  }
 }
 
 .about-content {
@@ -173,6 +250,12 @@ body {
   padding: 4rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .skills {
+    padding: 2rem;
+  }
+}
+
 .skills-wrapper {
   margin: 0 auto;
   max-width: 1024px;
@@ -186,6 +269,11 @@ body {
   text-transform: capitalize;
 }
 
+@media only screen and (max-width: 1024px) {
+  .skills-title {
+    font-size: 1.4em;
+  }
+}
 
 .skills-content {
   margin: 2rem 0;
@@ -203,6 +291,16 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 4rem;
   font-family: "Exo";
+}
+
+@media only screen and (max-width: 1024px) {
+  .skills-items {
+    display: block;
+  }
+
+  .skills-items > div + div {
+    margin-top: 2rem;
+  }
 }
 
 .skills-item-icon {
@@ -238,6 +336,13 @@ body {
   word-wrap: break-word;
 }
 
+@media only screen and (max-width: 1024px) {
+  .footer-bits {
+    padding: 0 2rem;
+    color: #ffcc001c;
+  }
+}
+
 .footer {
   background-image: url("../img/pattern.png");
   background-position: 10px 10px;
@@ -252,6 +357,16 @@ body {
   display: grid;
   grid-template-columns: 140px 140px 1fr;
   grid-column-gap: 3rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-content {
+    display: block;
+  }
+
+  .footer-content > div + div {
+    margin-top: 2rem;
+  }
 }
 
 .footer-title {
@@ -286,7 +401,62 @@ body {
   font-size: 1em;
 }
 
+.footer-credits span {
+  display: inline-block;
+  margin: 0 0.4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-credits span  {
+    margin-top: 0.5rem;
+    display: block;
+    text-align: left;
+  }
+}
+
 .footer-credits i {
   margin: 0 0.6rem;
   color: #ffcc00;
+}
+
+.portfolio {
+  margin-top: 0rem;
+  padding: 4rem;
+  background-color: #ffcc00;
+}
+
+@media only screen and (max-width: 1024px) {
+  .portfolio {
+    padding: 2rem;
+  }
+}
+
+.portfolio-title {
+  display: block;
+  font-family: "Exo";
+  color: #000000;
+  font-size: 1.8em;
+  text-transform: capitalize;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .portfolio-title {
+    font-size: 1.4em;
+  }
+}
+
+.portfolio-content {
+  margin: 2rem 0;
+  display: block;
+  font-family: "Exo";
+  color: #000000;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+
+.portfolio-wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
 }
