@@ -46,10 +46,10 @@
                         <div></div>
                     </div>
                     <div class="hero-window-content">
-                        <p>
+                        <p id="window-text">
                             Hi!<br />
                             Are you ready?<br />
-                            Wait for user input_<br />
+                            Wait for user input
                         </p>
                     </div>
                 </div>
@@ -224,10 +224,17 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mntn-dev/t.js@1.5.6/t.min.js"></script>
 
     <script>
 
         $(function () {
+            $("#window-text").t(
+                {
+                    speed: 50,
+                    caret: "<span></span>"
+                }
+            );
             $("a").on("click", function (event) {
                 if (this.hash !== "") {
                     event.preventDefault();
