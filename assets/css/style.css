@@ -139,7 +139,7 @@ a {
 }
 
 .hero-window-title {
-  padding: 0 0.5rem;
+  padding: 0 5px;
   height: 30px;
   background-color: #ffffff22;
   display: flex;
