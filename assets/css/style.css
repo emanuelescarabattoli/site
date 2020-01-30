@@ -315,8 +315,8 @@ a {
 .skills-items {
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 4rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 3rem;
   font-family: "Exo";
 }
 
@@ -334,6 +334,38 @@ a {
   font-size: 4rem;
   text-align: center;
   color: #ffcc00;
+  height: 5rem;
+}
+
+.skills-item-icon-with-subtitle {
+  font-size: 3.8rem;
+  text-align: center;
+  color: #ffcc00;
+  height: 5rem;
+}
+
+.skills-item-icon-with-subtitle div {
+  margin: 0 auto;
+  width: 165px;
+  position: relative;
+}
+
+.skills-item-icon-with-subtitle div *:first-child {
+  margin-left: -20px;
+}
+
+.skills-item-icon-with-subtitle span {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+  display: block;
+  font-weight: 600;
+  background-color: #ffcc00;
+  color: #000000;
+  border-radius: 1rem;
+  z-index: 9;
+  position: absolute;
+  bottom: 5px;
+  right: 40px;
 }
 
 .skills-item-title {
@@ -384,7 +416,7 @@ a {
   margin: 0 auto;
   padding: 2rem;
   display: grid;
-  grid-template-columns: 180px 180px 1fr;
+  grid-template-columns: 200px 200px 1fr;
   grid-column-gap: 3rem;
   z-index: 1;
   position: relative;
